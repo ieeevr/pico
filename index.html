@@ -11,9 +11,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-	
+    
     <!-- <model-viewer> HTML element -->
-    <model-viewer id="modelviewer" bounds="tight" src="headset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" data-dashlane-observed="true">
+    <model-viewer width="80%" id="modelviewer" bounds="tight" src="headset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" data-dashlane-observed="true">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -28,7 +28,12 @@
 	<button onclick="$('#modelviewer').attr('src','left.glb')">Left</button>
 	<button onclick="$('#modelviewer').attr('src','headset.glb')">Headset</button>
 	<button onclick="$('#modelviewer').attr('src','right.glb')">Right</button>
-	</p>
+  <h1 style="text-align:center">Check out the Pico Neo 3 Eye (drag to rotate)!</h1>
+	<img src="logo-main.svg" height="100px" style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;"/>
+  </p>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
