@@ -11,9 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-	<button onclick="$('#modelviewer').attr('src','left.glb')">Left</button>
-	<button onclick="$('#modelviewer').attr('src','headset.glb')">Headset</button>
-	<button onclick="$('#modelviewer').attr('src','right.glb')">Right</button>
+	
     <!-- <model-viewer> HTML element -->
     <model-viewer id="modelviewer" bounds="tight" src="headset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" data-dashlane-observed="true">
       <div class="progress-bar hide" slot="progress-bar">
@@ -26,6 +24,11 @@
           <img src="ar_hand_prompt.png">
       </div>
     </model-viewer>  
+	<p style="text-align: center">
+	<button onclick="$('#modelviewer').attr('src','left.glb')">Left</button>
+	<button onclick="$('#modelviewer').attr('src','headset.glb')">Headset</button>
+	<button onclick="$('#modelviewer').attr('src','right.glb')">Right</button>
+	</p>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
