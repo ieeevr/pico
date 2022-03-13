@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    
+    <img src="Pico-Logo.jpg" style="height: 100px;float:right;margin-right:20px"/>
     <!-- <model-viewer> HTML element -->
     <model-viewer style="height:350px;margin-left:auto;margin-right: auto;margin-top: 10px" id="modelviewer" bounds="tight" src="headset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" data-dashlane-observed="true">
       <div class="progress-bar hide" slot="progress-bar">
@@ -29,10 +29,7 @@
 	<button onclick="$('#modelviewer').attr('src','headset.glb')">Headset</button>
 	<button onclick="$('#modelviewer').attr('src','right.glb')">Right Controller</button>
   <h1 style="text-align:center">This is the new Pico Neo 3 Pro Eye (drag to rotate)!</h1>
-	<img src="Pico-Logo.jpg" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-height: 100px;"/>
+
   </p>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
