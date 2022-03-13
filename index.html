@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <img src="Pico-Logo.jpg" style="height: 100px;float:right;margin-right:20px"/>
+    
     <!-- <model-viewer> HTML element -->
     <model-viewer style="height:350px;margin-left:auto;margin-right: auto;margin-top: 10px" id="modelviewer" bounds="tight" src="headset.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" data-dashlane-observed="true">
       <div class="progress-bar hide" slot="progress-bar">
@@ -25,6 +25,7 @@
       </div>
     </model-viewer>  
 	<p style="text-align: center">
+    <img src="Pico-Logo.jpg" style="height: 100px;position: absolute; top: 20px; right:20px"/>
 	<button onclick="$('#modelviewer').attr('src','left.glb')">Left Controller</button>
 	<button onclick="$('#modelviewer').attr('src','headset.glb')">Headset</button>
 	<button onclick="$('#modelviewer').attr('src','right.glb')">Right Controller</button>
